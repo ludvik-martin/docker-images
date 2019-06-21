@@ -1,1 +1,1 @@
-docker build -t mludvik/tensorflow:1.0.latest .
+docker build -t mludvik/tensorflow:2.0.latest .
