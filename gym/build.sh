@@ -1,1 +1,1 @@
-docker build -t mludvik/gym:1.0.latest .
+docker build -t mludvik/gym:2.0.latest .

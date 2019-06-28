@@ -1,4 +1,4 @@
-FROM mludvik/tensorflow:1.0.latest
+FROM mludvik/tensorflow:2.0.latest
 
 # Various Python and C/build deps
 RUN apt-get update && apt-get install -y \ 
