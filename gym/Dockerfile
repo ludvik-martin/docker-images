@@ -48,7 +48,13 @@ COPY run_jupyter.sh /
 RUN chmod +x /run_jupyter.sh
 RUN pip3 install git+https://github.com/jakevdp/JSAnimation.git
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
-RUN pip3 install tqdm pyvirtualdisplay hyperopt click pandas
+RUN pip3 install tqdm \ 
+    pyvirtualdisplay \
+    hyperopt \
+    click \
+    pandas \
+    scikit-learn \
+    seaborn
 CMD ["/run_jupyter.sh", "--allow-root"]
 
 
