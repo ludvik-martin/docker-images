@@ -1,8 +1,8 @@
-FROM tensorflow/tensorflow:1.14.0-gpu-py3-jupyter
+FROM tensorflow/tensorflow:2.0.0a0-gpu-py3
 
 MAINTAINER martin.ludvik@gmail.com
 
-RUN apt-get update && apt-get install --no-install-recommends -y \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
     git \
     python-pil \
     python-lxml \
